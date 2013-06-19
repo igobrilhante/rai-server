@@ -1,0 +1,14 @@
+# Usuarios schema
+
+# --- !Ups
+
+CREATE TABLE SMARTCITY.Usuario (
+    id serial not null PRIMARY KEY,
+    username text not null,
+    email text NOT NULL,
+    password text NOT NULL
+);
+
+# --- !Downs
+
+DROP TABLE Usuario;
