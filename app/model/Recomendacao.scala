@@ -1,6 +1,7 @@
 package model
 
 import anorm.Pk
+import com.sun.xml.internal.bind.v2.TODO
 
 /**
  *
@@ -14,14 +15,13 @@ case class Recomendacao(id: Pk[Long],usuario: Usuario,poi: Poi,avaliacao:Double)
 
 object Recomendacao {
 
-  def get(usuario: Usuario, k: Int) : List[Recomendacao] = {
-
-     return null;
-  }
+  def get(id : Long) = TODO
 
   def avaliarRecomendacao(id : Long) = {
 
   }
+
+  def get(hourOfDay : Int, weather : String, lat : Double, lng : Double ) = TODO
 
 
 }

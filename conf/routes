@@ -8,8 +8,21 @@ GET     /login                      controllers.Application.login
 POST    /authenticate               controllers.Application.authenticate
 
 # Usuário
+GET     /usuario/:id                controllers.UsuarioController.get(id)
 GET     /usuario/cadastro           controllers.UsuarioController.cadastro
+GET     /usuario/:id/recomendacao   controllers.UsuarioController.recomencao(id)
 POST    /usuario/cadastrar          controllers.UsuarioController.cadastrar
+
+# Recomendacao
+GET     /recomendacao/:id           controllers.RecomendacaoController.get(id)
+POST    /recomendacao/:id/avaliar   controllers.RecomendacaoController.avaliar(id)
+POST    /recomendacao/context       controllers.RecomendacaoController.get
+
+# Pontos de Interesses
+GET     /poi/:id                    controllers.PoiController.get(id)
+GET     /poi/:id/comentarios        controllers.PoiController.comentarios(id)
+GET     /poi/search                 controllers.PoiController.buscar
+POST    /poi/search/:categories     controllers.PoiController.buscar(categories)
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)

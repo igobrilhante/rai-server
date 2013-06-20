@@ -2,17 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98dab8bc-3212-4631-8409-669ce0837f8d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/Poi.scala" afterPath="$PROJECT_DIR$/app/model/Poi.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/Recomendacao.scala" afterPath="$PROJECT_DIR$/app/model/Recomendacao.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/Usuario.scala" afterPath="$PROJECT_DIR$/app/model/Usuario.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/UsuarioController.scala" afterPath="$PROJECT_DIR$/app/controllers/UsuarioController.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/routes" afterPath="$PROJECT_DIR$/conf/routes" />
     </list>
     <ignored path="rai-server.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1371652771955" ignored="false" />
     <file path="/Usuario.scala" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1371737260285" ignored="false" />
-    <file path="/Recomendacao.scala" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1371737591432" ignored="false" />
+    <file path="/Recomendacao.scala" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1371739208154" ignored="false" />
     <file path="/Poi.scala" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1371737630057" ignored="false" />
+    <file path="/RecomendacaoController.scala" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1371740282299" ignored="false" />
+    <file path="/PoiController.scala" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1371740680681" ignored="false" />
+    <file path="/UsuarioController.scala" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1371739102184" ignored="false" />
+    <file path="/routes" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1371740732726" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,17 +88,70 @@
       <file leaf-file-name="Recomendacao.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/model/Recomendacao.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="4" selection-start="340" selection-end="340" vertical-scroll-proportion="0.0">
+            <state line="12" column="11" selection-start="160" selection-end="160" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#15#30#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Poi.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/model/Poi.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="17" selection-start="441" selection-end="441" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Poi.scala" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/model/Poi.scala">
+      <file leaf-file-name="RecomendacaoController.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/RecomendacaoController.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="17" selection-start="441" selection-end="441" vertical-scroll-proportion="0.28921568">
+            <state line="23" column="5" selection-start="581" selection-end="581" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#21#42#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UsuarioController.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/UsuarioController.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="47" column="63" selection-start="1074" selection-end="1074" vertical-scroll-proportion="0.0">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/conf/routes">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="22" selection-start="901" selection-end="901" vertical-scroll-proportion="0.50933784">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PoiController.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/PoiController.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="12" selection-start="384" selection-end="384" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#21#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Application.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/Application.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="7" selection-start="181" selection-end="181" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#21#38#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -119,8 +175,12 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/app/model/Usuario.scala" />
-        <option value="$PROJECT_DIR$/app/model/Recomendacao.scala" />
         <option value="$PROJECT_DIR$/app/model/Poi.scala" />
+        <option value="$PROJECT_DIR$/app/controllers/UsuarioController.scala" />
+        <option value="$PROJECT_DIR$/app/model/Recomendacao.scala" />
+        <option value="$PROJECT_DIR$/app/controllers/RecomendacaoController.scala" />
+        <option value="$PROJECT_DIR$/app/controllers/PoiController.scala" />
+        <option value="$PROJECT_DIR$/conf/routes" />
       </list>
     </option>
   </component>
@@ -138,7 +198,7 @@
     <OptionsSetting value="true" id="Edit" />
     <OptionsSetting value="true" id="Undo Check Out" />
     <OptionsSetting value="true" id="Get Latest Version" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="1" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
@@ -172,6 +232,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="rai-server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rai-server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rai-server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="conf" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -243,12 +317,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Poi.scala" />
-              <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -271,6 +341,21 @@
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
       <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Specs2RunConfiguration" factoryName="Specs2">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <extension name="scalaCoverage" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
       <method />
     </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
@@ -466,16 +551,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/Recomendacao.scala">
+    <entry file="file://$PROJECT_DIR$/app/model/Poi.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="4" selection-start="340" selection-end="340" vertical-scroll-proportion="0.0">
+        <state line="21" column="17" selection-start="441" selection-end="441" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/Poi.scala">
+    <entry file="file://$PROJECT_DIR$/app/controllers/Application.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="17" selection-start="441" selection-end="441" vertical-scroll-proportion="0.28921568">
+        <state line="10" column="7" selection-start="181" selection-end="181" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#21#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/Recomendacao.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="11" selection-start="160" selection-end="160" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#15#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/UsuarioController.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="63" selection-start="1074" selection-end="1074" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/RecomendacaoController.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="5" selection-start="581" selection-end="581" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#21#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/PoiController.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="12" selection-start="384" selection-end="384" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#21#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/routes">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="22" selection-start="901" selection-end="901" vertical-scroll-proportion="0.50933784">
           <folding />
         </state>
       </provider>

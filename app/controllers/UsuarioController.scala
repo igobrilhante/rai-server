@@ -40,4 +40,10 @@ object UsuarioController extends Controller {
       }
     )
   }
+
+  def get(id: Long) = TODO
+
+  def recomendacao(id : Long) = TODO
+
+  def recomendacao(id : Long, categories : List[String]) = TODO
 }
