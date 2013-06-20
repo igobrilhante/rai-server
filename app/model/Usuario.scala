@@ -31,15 +31,16 @@ case class TokenUsuario(usuario: Usuario,token: String)
 object Usuario {
 
   def cadastrar(usuario: Usuario) = {
-    DB.withConnection {
-      c =>
-      val res: Long = SQL("insert into smartcity.Usuario(username,email,password) values ({username},{email},{password})")
-        .on(
-      "username" -> usuario.username,
-      "email" -> usuario.email,
-      "password" -> usuario.password
-      ).executeInsert()
-    }
+//    DB.withConnection {
+//      c =>
+//      val res: Long = SQL("insert into smartcity.Usuario(username,email,password) values ({username},{email},{password})")
+//        .on(
+//      "username" -> usuario.username,
+//      "email" -> usuario.email,
+//      "password" -> usuario.password
+//      ).executeInsert()
+//    }
+    print("Casdastrar")
   }
 }
 
