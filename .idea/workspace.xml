@@ -2,15 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98dab8bc-3212-4631-8409-669ce0837f8d" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Scala_2_10_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Scala_2_9_2.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/Poi.scala" afterPath="$PROJECT_DIR$/app/model/Poi.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/Recomendacao.scala" afterPath="$PROJECT_DIR$/app/model/Recomendacao.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/Usuario.scala" afterPath="$PROJECT_DIR$/app/model/Usuario.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="rai-server.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1371652771955" ignored="false" />
-    <file path="/Usuario.scala" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1371735595993" ignored="false" />
+    <file path="/Usuario.scala" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1371737260285" ignored="false" />
+    <file path="/Recomendacao.scala" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1371737591432" ignored="false" />
+    <file path="/Poi.scala" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1371737630057" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,16 +73,39 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Usuario.scala" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Usuario.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/model/Usuario.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="21" selection-start="941" selection-end="941" vertical-scroll-proportion="0.77462435">
+            <state line="52" column="2" selection-start="1023" selection-end="1023" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Recomendacao.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/model/Recomendacao.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="4" selection-start="340" selection-end="340" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Poi.scala" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/model/Poi.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="17" selection-start="441" selection-end="441" vertical-scroll-proportion="0.28921568">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -94,6 +119,8 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/app/model/Usuario.scala" />
+        <option value="$PROJECT_DIR$/app/model/Recomendacao.scala" />
+        <option value="$PROJECT_DIR$/app/model/Poi.scala" />
       </list>
     </option>
   </component>
@@ -179,8 +206,26 @@
               <option name="myItemId" value="model" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Usuario.scala" />
+              <option name="myItemId" value="rai-server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rai-server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Recomendacao.scala" />
               <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -200,6 +245,10 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="model" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Poi.scala" />
+              <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -412,7 +461,21 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/model/Usuario.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="21" selection-start="941" selection-end="941" vertical-scroll-proportion="0.77462435">
+        <state line="52" column="2" selection-start="1023" selection-end="1023" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/Recomendacao.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="4" selection-start="340" selection-end="340" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/Poi.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="17" selection-start="441" selection-end="441" vertical-scroll-proportion="0.28921568">
           <folding />
         </state>
       </provider>

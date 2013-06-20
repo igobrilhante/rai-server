@@ -42,5 +42,14 @@ object Usuario {
 //    }
     print("Casdastrar")
   }
+
+  def login(usuario: Usuario){
+
+  }
+
+  def editar(usuario: Usuario){
+
+  }
+
 }
 

@@ -30,3 +30,15 @@ case class Poi(
 case class PoiComentario(poi: Poi, createdAt: Timestamp,comentario: String)
 
 
+object Poi {
+  def get(id: Long) : Poi = {
+    return null;
+  }
+
+  def comentarios(id: Long) : List[PoiComentario] = {
+    return null;
+  }
+
+}
+
+
