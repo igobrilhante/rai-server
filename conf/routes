@@ -8,21 +8,22 @@ GET     /login                      controllers.Application.login
 POST    /authenticate               controllers.Application.authenticate
 
 # Usuário
-GET     /usuario/:id                controllers.UsuarioController.get(id)
+GET     /usuario/:id                controllers.UsuarioController.get(id: Long)
 GET     /usuario/cadastro           controllers.UsuarioController.cadastro
-GET     /usuario/:id/recomendacao   controllers.UsuarioController.recomencao(id)
+GET     /usuario/:id/recomendacao   controllers.UsuarioController.recomendacao(id: Long)
 POST    /usuario/cadastrar          controllers.UsuarioController.cadastrar
 
 # Recomendacao
-GET     /recomendacao/:id           controllers.RecomendacaoController.get(id)
-POST    /recomendacao/:id/avaliar   controllers.RecomendacaoController.avaliar(id)
-POST    /recomendacao/context       controllers.RecomendacaoController.get
+GET     /recomendacao/:id           controllers.RecomendacaoController.get(id: Long)
+POST    /recomendacao/:id/avaliar   controllers.RecomendacaoController.avaliar(id: Long,usuarioId:Long, avaliacao: Double)
+POST    /recomendacao/contexto      controllers.RecomendacaoController.contexto(hourOfDay : Int, weather : String, lat : Double, lng : Double)
+GET     /recomendacao/test          controllers.RecomendacaoController.test
 
 # Pontos de Interesses
-GET     /poi/:id                    controllers.PoiController.get(id)
-GET     /poi/:id/comentarios        controllers.PoiController.comentarios(id)
-GET     /poi/search                 controllers.PoiController.buscar
-POST    /poi/search/:categories     controllers.PoiController.buscar(categories)
+GET     /poi/:id                                  controllers.PoiController.get(id: String)
+GET     /poi/:id/comentarios                      controllers.PoiController.comentarios(id: String)
+GET     /poi/buscar                               controllers.PoiController.buscar
+POST    /poi/buscar-por-categoria/:categories     controllers.PoiController.buscarPorCategorias(categories: String)
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)

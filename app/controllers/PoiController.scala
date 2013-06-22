@@ -1,7 +1,6 @@
 package controllers
 
-import play.mvc._
-import com.sun.xml.internal.bind.v2.TODO
+import play.api.mvc._
 
 /**
  * Created with IntelliJ IDEA.
@@ -12,11 +11,11 @@ import com.sun.xml.internal.bind.v2.TODO
  */
 object PoiController extends Controller {
 
-  def get(id : Long) = TODO
+  def get(id : String) = TODO
 
-  def comentarios(id : Long) = TODO
+  def comentarios(id : String) = TODO
 
   def buscar() = TODO
 
-  def buscar(categories : List[String]) = TODO
+  def buscarPorCategorias(categories : String) = TODO
 }

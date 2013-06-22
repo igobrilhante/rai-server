@@ -4,6 +4,7 @@ import anorm._
 import anorm.SqlParser._
 import play.api.db.DB
 import play.api.Play.current
+import play.api.libs.json.{Json, JsValue, Writes}
 
 /**
  *
@@ -29,6 +30,16 @@ case class TokenUsuario(usuario: Usuario,token: String)
  *
  */
 object Usuario {
+
+  implicit val usuarioFormat = new Writes[Usuario]{
+       def writes(usuario : Usuario) : JsValue = {
+         Json.obj(
+           "id"         -> usuario.id.get,
+           "username"   -> usuario.username,
+           "email"      -> usuario.email
+         )
+       }
+  }
 
   def cadastrar(usuario: Usuario) = {
 //    DB.withConnection {

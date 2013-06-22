@@ -1,27 +1,52 @@
 package model
 
 import anorm.Pk
-import com.sun.xml.internal.bind.v2.TODO
+import play.api.libs.json.{Json, JsValue, Writes}
+
 
 /**
  *
  * @param id
- * @param usuario
  * @param poi
  * @param avaliacao
  */
-case class Recomendacao(id: Pk[Long],usuario: Usuario,poi: Poi,avaliacao:Double)
+case class Recomendacao(id: Pk[Long],poi: Poi,avaliacao:Double)
 
+case class Nota(id: Pk[Long],usuario : Usuario, nota: Double)
 
 object Recomendacao {
 
-  def get(id : Long) = TODO
+  implicit val recomendacaoWrites = new Writes[Recomendacao] {
+    def writes(rec : Recomendacao): JsValue = {
+      Json.obj(
+        "id"        -> rec.id.get,
+        "poi"       -> rec.poi,
+        "avaliacao" -> rec.avaliacao
+      )
+    }
+  }
 
-  def avaliarRecomendacao(id : Long) = {
+  implicit val notaWrites = new Writes[Nota] {
+    def writes(nota : Nota): JsValue = {
+      Json.obj(
+        "id"            -> nota.id.get,
+        "usuario"       -> nota.usuario,
+        "nota"          -> nota.nota
+      )
+    }
+  }
+
+  def get(id : Long) : Recomendacao = {
+      return null;
+  }
+
+  def avaliarRecomendacao(id : Long,usuarioId:Long, nota: Double) = {
 
   }
 
-  def get(hourOfDay : Int, weather : String, lat : Double, lng : Double ) = TODO
+  def get(hourOfDay : Int, weather : String, lat : Double, lng : Double ) : List[Recomendacao] = {
+    return null;
+  }
 
 
 }

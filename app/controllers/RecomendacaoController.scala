@@ -1,10 +1,9 @@
 package controllers
 
 import play.api.mvc._
-import play.api.libs.json
-import play.api._
-import com.sun.xml.internal.bind.v2.TODO
-import libs.json.JsError
+import model.{Poi, Recomendacao}
+import play.api.libs.json._
+import play.api.libs.functional.syntax._
 
 /**
  * Created with IntelliJ IDEA.
@@ -25,10 +24,76 @@ object RecomendacaoController extends Controller {
 
   }
 
-  def get(id : Long) = TODO
+  def get(id : Long) = Action{
+    request =>
+    {
+      val rec: Recomendacao = Recomendacao.get(id)
+      if(rec!=null){
+      val data =     Json.obj(
+        "resultado" -> Json.obj(
+          "recomendacao"->Json.obj(
+            "id"        -> rec.id.get,
+            "poi"       -> Json.toJson(rec.poi),
+            "avaliacao" -> rec.avaliacao
+          )
+        ),
+        "meta" -> Json.obj(
+          "code"->202
+        )
+      )
 
-  def avaliar(id : Long, avaliacao : Double) = TODO
+      Ok(data)
+      }
+      else{
+        BadRequest(Json.obj(
+          "resultado" -> Json.obj(),
+          "meta" -> Json.obj("code"->401,"erro"->"Problema nao identificado")
+        ))
+      }
+    }
+  }
 
-  def get(hourOfDay : Int, weather : String, lat : Double, lng : Double ) = TODO
+
+
+  def avaliar(id : Long,usuarioId:Long, avaliacao : Double) =  Action{
+
+    request =>
+    {
+      val res = Recomendacao.avaliarRecomendacao(id,usuarioId,avaliacao)
+      if(res != null){
+        Ok(Json.obj(
+          "resultado" -> Json.obj(),
+          "meta"      -> Json.obj("code"->202)
+        ))
+      }
+      BadRequest(Json.obj(
+        "resultado" -> Json.obj(),
+        "meta" -> Json.obj("code"->401,"erro"->"Problema nao identificado")
+      ))
+
+    }
+
+  }
+
+  def contexto(hourOfDay : Int, weather : String, lat : Double, lng : Double ) = Action{
+    implicit request =>
+    {
+      val recs:List[Recomendacao] = Recomendacao.get(hourOfDay,weather,lat,lng)
+
+      if (recs!=null){
+      Ok(Json.obj(
+        "resultado" -> Json.obj(
+            "count" ->  recs.size,
+            "recs"  ->  Json.arr(recs.map(rec => Json.toJson(rec)))
+        ),
+        "meta" -> Json.obj("code"->202)
+      ))
+      }
+      BadRequest(Json.obj(
+        "resultado" -> Json.obj(),
+        "meta"      -> Json.obj("code"->401,"erro"->"Problema nao identificado")
+      ))
+    }
+  }
 
 }
