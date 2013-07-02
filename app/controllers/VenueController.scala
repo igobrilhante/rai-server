@@ -72,6 +72,26 @@ object VenueController extends Controller {
     }
   }
 
+  def getVenuesByTag(tag : String) = Action{
+    val venues = Venue.getByTag(tag);
+    if(venues!=null){
+      Ok(
+        Json.obj(
+          "result"->Json.obj(
+            "count"   ->  venues.size,
+            "venues"    ->  Json.toJson(venues)
+          )
+        )
+      )
+    }
+    else{
+      BadRequest(Json.obj(
+        "result"->Json.obj()
+      )
+      )
+    }
+  }
+
   def buscar() = TODO
 
   def buscarPorCategorias(categories : String) = TODO

@@ -91,6 +91,16 @@ object Venue {
             ).on("id" -> id).as{venueSQL.single}
   }
 
+  def getByTag(tag : String) : List[Venue] = DB.withConnection {
+    implicit conn =>
+      SQL(
+        " select distinct venue_id AS ID,name,latitude,longitude,rating " +
+        " from fortaleza.venue_tip t,fortaleza.venue v    " +
+        " where  venue_id = v.id  and tip_content similar to '%'||{tag}||'%'  " +
+        " order by rating desc limit 10"
+      ).on("tag" -> tag).as{venueSQL *}
+  }
+
 
   def comentarios(id: String) : List[VenueTip] = DB.withConnection {
     implicit conn =>

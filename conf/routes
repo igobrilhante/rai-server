@@ -25,6 +25,7 @@ GET     /poi/:id/comentarios                    controllers.VenueController.come
 GET     /poi/buscar                             controllers.VenueController.buscar
 POST    /poi/buscar-por-categoria/:categories   controllers.VenueController.buscarPorCategorias(categories: String)
 GET     /poi/buscar/:latitude/:longitude        controllers.VenueController.getVenues(latitude: Double, longitude: Double)
+GET     /poi/buscar-por-tag/:tag                         controllers.VenueController.getVenuesByTag(tag:String)
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)
