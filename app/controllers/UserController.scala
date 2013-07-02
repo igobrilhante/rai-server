@@ -3,7 +3,7 @@ package controllers
 import play.api.data.Form
 import play.api.data.Forms._
 import anorm.{Pk, NotAssigned}
-import model.{Usuario}
+import model.{User}
 import play.api.mvc._
 import views.html
 
@@ -14,16 +14,16 @@ import views.html
  * Time: 02:04
  * To change this template use File | Settings | File Templates.
  */
-object UsuarioController extends Controller {
+object UserController extends Controller {
 
 
-  val usuarioForm = Form[Usuario](
+  val usuarioForm = Form[User](
     mapping(
       "id" -> ignored(NotAssigned:Pk[Long]),
       "username" -> text,
       "email" -> email,
       "password" -> text
-    )(Usuario.apply)(Usuario.unapply)
+    )(User.apply)(User.unapply)
   )
 
 
@@ -35,7 +35,7 @@ object UsuarioController extends Controller {
     usuarioForm.bindFromRequest().fold(
       errors  =>  BadRequest(html.cadastro(errors)),
       usuario =>  {
-        Usuario.cadastrar(usuario)
+        User.cadastrar(usuario)
         Ok(html.index("Cadastro realizado com sucesso "+usuario.username))
       }
     )

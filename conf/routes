@@ -3,27 +3,28 @@
 # ~~~~
 
 # Home page
-GET     /                           controllers.Application.index
-GET     /login                      controllers.Application.login
-POST    /authenticate               controllers.Application.authenticate
+GET     /                                       controllers.Application.index
+GET     /login                                  controllers.Application.login
+POST    /authenticate                           controllers.Application.authenticate
 
-# Usuário
-GET     /usuario/:id                controllers.UsuarioController.get(id: Long)
-GET     /usuario/cadastro           controllers.UsuarioController.cadastro
-GET     /usuario/:id/recomendacao   controllers.UsuarioController.recomendacao(id: Long)
-POST    /usuario/cadastrar          controllers.UsuarioController.cadastrar
+# Users
+GET     /usuario/:id                            controllers.UserController.get(id: Long)
+GET     /usuario/cadastro                       controllers.UserController.cadastro
+GET     /usuario/:id/recomendacao               controllers.UserController.recomendacao(id: Long)
+POST    /usuario/cadastrar                      controllers.UserController.cadastrar
 
-# Recomendacao
-GET     /recomendacao/:id           controllers.RecomendacaoController.get(id: Long)
-POST    /recomendacao/:id/avaliar   controllers.RecomendacaoController.avaliar(id: Long,usuarioId:Long, avaliacao: Double)
-POST    /recomendacao/contexto      controllers.RecomendacaoController.contexto(hourOfDay : Int, weather : String, lat : Double, lng : Double)
-GET     /recomendacao/test          controllers.RecomendacaoController.test
+# Recommendation
+GET     /recomendacao/:id                       controllers.RecommendationController.get(id: Long)
+POST    /recomendacao/:id/avaliar               controllers.RecommendationController.avaliar(id: Long,usuarioId:Long, avaliacao: Double)
+POST    /recomendacao/contexto                  controllers.RecommendationController.contexto(hourOfDay : Int, weather : String, lat : Double, lng : Double)
+GET     /recomendacao/test/:nome                controllers.RecommendationController.test(nome : String)
 
-# Pontos de Interesses
-GET     /poi/:id                                  controllers.PoiController.get(id: String)
-GET     /poi/:id/comentarios                      controllers.PoiController.comentarios(id: String)
-GET     /poi/buscar                               controllers.PoiController.buscar
-POST    /poi/buscar-por-categoria/:categories     controllers.PoiController.buscarPorCategorias(categories: String)
+# Venues
+GET     /poi/:id                                controllers.VenueController.get(id: String)
+GET     /poi/:id/comentarios                    controllers.VenueController.comentarios(id: String)
+GET     /poi/buscar                             controllers.VenueController.buscar
+POST    /poi/buscar-por-categoria/:categories   controllers.VenueController.buscarPorCategorias(categories: String)
+GET     /poi/buscar/:latitude/:longitude        controllers.VenueController.getVenues(latitude: Double, longitude: Double)
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)

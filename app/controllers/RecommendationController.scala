@@ -1,7 +1,7 @@
 package controllers
 
 import play.api.mvc._
-import model.{Poi, Recomendacao}
+import model._
 import play.api.libs.json._
 import play.api.libs.functional.syntax._
 
@@ -12,22 +12,17 @@ import play.api.libs.functional.syntax._
  * Time: 11:16
  * To change this template use File | Settings | File Templates.
  */
-object RecomendacaoController extends Controller {
+object RecommendationController extends Controller {
 
 
-  def test() = Action(parse.json) {  request =>
-    request.body.validate[String].map{
-      case name => Ok("Hello " + name)
-    }.recoverTotal{
-      e => BadRequest("Detected error:"+ JsError.toFlatJson(e))
+  def test(nome : String) = Action {  request =>
+      Ok(Json.obj("nome"->nome))
     }
-
-  }
 
   def get(id : Long) = Action{
     request =>
     {
-      val rec: Recomendacao = Recomendacao.get(id)
+      val rec: Recommendation = Recommendation.get(id)
       if(rec!=null){
       val data =     Json.obj(
         "resultado" -> Json.obj(
@@ -59,7 +54,7 @@ object RecomendacaoController extends Controller {
 
     request =>
     {
-      val res = Recomendacao.avaliarRecomendacao(id,usuarioId,avaliacao)
+      val res = Recommendation.avaliarRecomendacao(id,usuarioId,avaliacao)
       if(res != null){
         Ok(Json.obj(
           "resultado" -> Json.obj(),
@@ -78,7 +73,7 @@ object RecomendacaoController extends Controller {
   def contexto(hourOfDay : Int, weather : String, lat : Double, lng : Double ) = Action{
     implicit request =>
     {
-      val recs:List[Recomendacao] = Recomendacao.get(hourOfDay,weather,lat,lng)
+      val recs:List[Recommendation] = Recommendation.get(hourOfDay,weather,lat,lng)
 
       if (recs!=null){
       Ok(Json.obj(

@@ -6,7 +6,7 @@ import data.Forms._
 import play.api.mvc._
 import play.api.templates.Html
 import views.html
-import model.LoginUsuario
+import model.Login
 
 object Application extends Controller {
   
@@ -14,11 +14,11 @@ object Application extends Controller {
     Ok(views.html.index("Recomenda Ai - RAI"))
   }
 
-  val loginForm = Form[LoginUsuario](
+  val loginForm = Form[Login](
     mapping(
       "username" -> text,
       "password" -> text
-    )(LoginUsuario.apply)(LoginUsuario.unapply)
+    )(Login.apply)(Login.unapply)
   )
 
   def login = Action { implicit request =>

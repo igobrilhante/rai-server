@@ -1,14 +1,47 @@
-# Usuarios schema
+--# Usuarios schema
+--
+--# --- !Ups
 
-# --- !Ups
+--CREATE TABLE SMARTCITY.Usuario (
+--    id serial not null PRIMARY KEY,
+--    username text not null,
+--    email text NOT NULL,
+--    password text NOT NULL
+--);
+--
+--# --- !Downs
+--
+--DROP TABLE Usuario;
 
-CREATE TABLE SMARTCITY.Usuario (
-    id serial not null PRIMARY KEY,
-    username text not null,
-    email text NOT NULL,
-    password text NOT NULL
+drop table if exists fortaleza.venue;
+create table fortaleza.venue (
+	id 		text primary key,
+	name 		text,
+	address		text,
+	crossstreet	text,
+	latitude	double precision,
+	longitude	double precision,
+	city		text,
+	state		text,
+	country		text,
+	users_count	int,
+	checkins_count	int,
+	tips_count	int,
+	rating		double precision
 );
 
-# --- !Downs
+drop table if exists fortaleza.venue_tip;
+create table fortaleza.venue_tip (
+	poi_id		text references fortaleza.venue(id),
+	tip_id		text primary key,
+	user_id		bigint,
+	tip_content	text,
+	datetime	bigint
+);
 
-DROP TABLE Usuario;
+drop table if exists fortaleza.venue_category;
+create table fortaleza.venue_category (
+	venue_id	text references fortaleza.venue(id),
+	category_id	text,
+	category_name	text
+);
