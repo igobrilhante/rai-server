@@ -1,30 +1,40 @@
 @(form: Form[model.Login])(implicit flash: Flash)
+@import helper.twitterBootstrap._
+
 
 @main("Entrar"){
 @helper.form(routes.Application.authenticate) {
 
-    <h1>Entrar</h1>
+    <h1>RAI</h1>
+
 
     @form.globalError.map { error =>
-        <p class="error">
+        <p class="text-error">
         @error.message
         </p>
     }
 
-    @flash.get("success").map { message =>
-        <p class="success">
-    </p>
+    @if(flash.get("success")){
+        <p class="text-success">
+            @flash.get("success")
+        </p>
     }
 
-    <p>
-    <input type="email" name="email" placeholder="Email" id="email" value="@form("email").value">
-</p>
-    <p>
-        <input type="password" name="password" id="password" placeholder="Password">
-    </p>
-    <p>
-        <button type="submit" id="loginbutton">Login</button>
-    </p>
+    <div class="container">
+
+        <form class="form-signin">
+            <h2 class="form-signin-heading">Fazer log-in</h2>
+            <input type="text" class="input-block-level" placeholder="Usuário" name="username" id="username" value="@form("username").value" />
+            <input type="password" class="input-block-level" placeholder="Password" name="password" id="password" value="@form("password").value" />
+            <button class="btn btn-large btn-primary" type="submit">Entrar</button>
+            <span class="help-inline"><a href="/signup" class="text-info"> Ainda não sou cadastrado </a></span>
+        </form>
+        <div>
+
+        </div>
+
+    </div> <!-- /container -->
+
 
     }
 }

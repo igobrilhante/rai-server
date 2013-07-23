@@ -3,7 +3,7 @@ package controllers
 import play.api.data.Form
 import play.api.data.Forms._
 import anorm.{Pk, NotAssigned}
-import model.{User}
+import model.{SignUp, User}
 import play.api.mvc._
 import views.html
 
@@ -27,19 +27,6 @@ object UserController extends Controller {
   )
 
 
-  def cadastro = Action {
-    Ok(html.cadastro(usuarioForm))
-  }
-
-  def cadastrar = Action { implicit request =>
-    usuarioForm.bindFromRequest().fold(
-      errors  =>  BadRequest(html.cadastro(errors)),
-      usuario =>  {
-        User.cadastrar(usuario)
-        Ok(html.index("Cadastro realizado com sucesso "+usuario.username))
-      }
-    )
-  }
 
   def get(id: Long) = TODO
 

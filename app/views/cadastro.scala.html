@@ -1,30 +1,31 @@
-@(form: Form[model.User])
+@(form: Form[model.SignUp])
 
 
 @main("Cadastrar Usuário"){
-    @helper.form(routes.UserController.cadastrar) {
+    @helper.form(routes.Application.signupAction) {
 
-        <h1>Cadastro</h1>
+        <h1>RAI</h1>
 
-        @form.globalError.map { error =>
-            <p class="error">
+       @form.globalError.map { error =>
+        <p class="text-error">
             @error.message
-            </p>
-        }
+                </p>
+                }
 
 
-        <p>
-        <input type="text" name="username" placeholder="Username" id="username" value="@form("username").value">
-    </p>
-        <p>
-        <input type="email" name="email" placeholder="Email" id="email" value="@form("email").value">
-    </p>
-        <p>
-            <input type="password" name="password" id="password" placeholder="Password">
-        </p>
-        <p>
-            <button type="submit" id="botaoCadastro">Cadastrar</button>
-        </p>
+        <div class="container">
+
+        <form class="form-signin">
+            <h2 class="form-signin-heading">Cadastro</h2>
+            <input type="text" class="input-block-level" placeholder="Usuário" name="username"  id="username" value="@form("username").value" required/>
+            <input type="email" class="input-block-level" placeholder="Email" name="email"   id="email" value="@form("email").value" required/>
+            <input type="password" class="input-block-level" placeholder="Senha" name="password" id="password" value="@form("password").value" required/>
+            <input type="password" class="input-block-level" placeholder="Confirmar Senha" name="confirmedPass" id="confirmedPass" value="@form("confirmedPass").value" required/>
+            <button class="btn btn-large btn-primary" type="submit">Entrar</button>
+        </form>
+
+        </div> <!-- /container -->
 
     }
+
 }

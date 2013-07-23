@@ -6,12 +6,12 @@
 GET     /                                       controllers.Application.index
 GET     /login                                  controllers.Application.login
 POST    /authenticate                           controllers.Application.authenticate
+GET     /signup                                 controllers.Application.signUp
+POST    /signupAction                           controllers.Application.signupAction
 
 # Users
 GET     /usuario/:id                            controllers.UserController.get(id: Long)
-GET     /usuario/cadastro                       controllers.UserController.cadastro
 GET     /usuario/:id/recomendacao               controllers.UserController.recomendacao(id: Long)
-POST    /usuario/cadastrar                      controllers.UserController.cadastrar
 
 # Recommendation
 GET     /recomendacao/:id                       controllers.RecommendationController.get(id: Long)
