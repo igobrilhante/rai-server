@@ -28,11 +28,11 @@
     <file path="$PROJECT_DIR$/../rai/src/com/rai/services/GeoCoderService.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1372728944691" ignored="false" />
     <file path="$PROJECT_DIR$/../rai/src/com/rai/services/WeatherService.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374550077196" ignored="false" />
     <file path="$PROJECT_DIR$/../rai/src/com/rai/services/TwitterService.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1372729495084" ignored="false" />
-    <file path="$PROJECT_DIR$/../rai/src/com/rai/MapActivity.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374552096639" ignored="false" />
-    <file path="/MapActivity.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374552079580" ignored="false" />
+    <file path="$PROJECT_DIR$/../rai/src/com/rai/MapActivity.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374568658212" ignored="false" />
+    <file path="/MapActivity.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374568656545" ignored="false" />
     <file path="/WeatherService.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374550070405" ignored="false" />
-    <file path="$PROJECT_DIR$/../rai/src/com/rai/context/ContextManager.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374550742908" ignored="false" />
-    <file path="/ContextManager.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374550737525" ignored="false" />
+    <file path="$PROJECT_DIR$/../rai/src/com/rai/context/ContextManager.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374567822728" ignored="false" />
+    <file path="/ContextManager.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374567820752" ignored="false" />
     <file path="/LocationSensor.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374550941151" ignored="false" />
     <file path="$PROJECT_DIR$/../rai/src/com/rai/sensor/LocationSensor.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374550946808" ignored="false" />
     <file path="$PROJECT_DIR$/../rai/res/layout/activity_map.xml" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374551826256" ignored="false" />
@@ -46,12 +46,12 @@
     <file path="$PROJECT_DIR$/../rai/src/com/rai/MainActivity.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374553301222" ignored="false" />
     <file path="/MainActivity.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374553294018" ignored="false" />
     <file path="$PROJECT_DIR$/../rai/AndroidManifest.xml" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374552961487" ignored="false" />
-    <file path="$PROJECT_DIR$/../rai/src/com/rai/WebActivity.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374566811503" ignored="false" />
+    <file path="$PROJECT_DIR$/../rai/src/com/rai/WebActivity.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374568024194" ignored="false" />
     <file path="$PROJECT_DIR$/../rai/gen/com/rai/BuildConfig.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374552976856" ignored="false" />
     <file path="$PROJECT_DIR$/../rai/gen/com/rai/Manifest.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374552964229" ignored="false" />
     <file path="$PROJECT_DIR$/../rai/gen/com/rai/R.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374552964229" ignored="false" />
     <file path="$PROJECT_DIR$/../rai/res/layout/activity_web.xml" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374552680241" ignored="false" />
-    <file path="/WebActivity.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374552818121" ignored="false" />
+    <file path="/WebActivity.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374567991152" ignored="false" />
     <file path="/fragment.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374552909871" ignored="false" />
     <file path="/Application.scala" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374567168845" ignored="false" />
     <file path="/User.scala" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374565214694" ignored="false" />
@@ -140,10 +140,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.scala.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="login.scala.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/login.scala.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="8" selection-start="247" selection-end="247" vertical-scroll-proportion="-7.5">
+            <state line="12" column="8" selection-start="247" selection-end="247" vertical-scroll-proportion="0.20316027">
               <folding />
             </state>
           </provider>
@@ -167,10 +167,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Application.scala" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Application.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/Application.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="55" selection-start="1005" selection-end="1005" vertical-scroll-proportion="0.2747253">
+            <state line="36" column="52" selection-start="899" selection-end="899" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#21#38#0" expanded="true" />
               </folding>
@@ -884,6 +884,15 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/Application.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="52" selection-start="899" selection-end="899" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#21#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/cadastro.scala.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="31" column="17" selection-start="1174" selection-end="1174" vertical-scroll-proportion="-19.375">
@@ -900,17 +909,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/login.scala.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="8" selection-start="247" selection-end="247" vertical-scroll-proportion="-7.5">
+        <state line="12" column="8" selection-start="247" selection-end="247" vertical-scroll-proportion="0.20316027">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/Application.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="55" selection-start="1005" selection-end="1005" vertical-scroll-proportion="0.2747253">
-          <folding>
-            <element signature="e#21#38#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

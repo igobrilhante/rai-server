@@ -34,9 +34,7 @@ object Application extends Controller {
         formWithErrors => BadRequest(html.login(formWithErrors)),
         login => {
               val token = User.getToken(login);
-              Redirect("/login#access_token="+token).flashing(
-                "success" -> "Cadastro realizado com sucesso"
-              )
+              Redirect("/login#access_token="+token)
         }
       )
   }
