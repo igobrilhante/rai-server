@@ -3,15 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="98dab8bc-3212-4631-8409-669ce0837f8d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/Application.scala" afterPath="$PROJECT_DIR$/app/controllers/Application.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/Build.scala" afterPath="$PROJECT_DIR$/project/Build.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/User.scala" afterPath="$PROJECT_DIR$/app/model/User.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/UserController.scala" afterPath="$PROJECT_DIR$/app/controllers/UserController.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/cadastro.scala.html" afterPath="$PROJECT_DIR$/app/views/cadastro.scala.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/login.scala.html" afterPath="$PROJECT_DIR$/app/views/login.scala.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/main.scala.html" afterPath="$PROJECT_DIR$/app/views/main.scala.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/routes" afterPath="$PROJECT_DIR$/conf/routes" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="rai-server.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -55,19 +46,20 @@
     <file path="$PROJECT_DIR$/../rai/src/com/rai/MainActivity.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374553301222" ignored="false" />
     <file path="/MainActivity.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374553294018" ignored="false" />
     <file path="$PROJECT_DIR$/../rai/AndroidManifest.xml" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374552961487" ignored="false" />
-    <file path="$PROJECT_DIR$/../rai/src/com/rai/WebActivity.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374552877176" ignored="false" />
+    <file path="$PROJECT_DIR$/../rai/src/com/rai/WebActivity.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374566811503" ignored="false" />
     <file path="$PROJECT_DIR$/../rai/gen/com/rai/BuildConfig.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374552976856" ignored="false" />
     <file path="$PROJECT_DIR$/../rai/gen/com/rai/Manifest.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374552964229" ignored="false" />
     <file path="$PROJECT_DIR$/../rai/gen/com/rai/R.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374552964229" ignored="false" />
     <file path="$PROJECT_DIR$/../rai/res/layout/activity_web.xml" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374552680241" ignored="false" />
     <file path="/WebActivity.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374552818121" ignored="false" />
     <file path="/fragment.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374552909871" ignored="false" />
-    <file path="/Application.scala" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374566331307" ignored="false" />
+    <file path="/Application.scala" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374567168845" ignored="false" />
     <file path="/User.scala" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374565214694" ignored="false" />
     <file path="/UserController.scala" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374554298356" ignored="false" />
     <file path="/Build.scala" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374559737943" ignored="false" />
     <file path="/login.scala.html" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374566479817" ignored="false" />
     <file path="/main.scala.html" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374560616496" ignored="false" />
+    <file path="$PROJECT_DIR$/target/scala-2.10/src_managed/main/views/html/login.template.scala" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374566686197" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,10 +140,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.scala.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="login.scala.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/login.scala.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="12" selection-start="915" selection-end="915" vertical-scroll-proportion="0.49097064">
+            <state line="12" column="8" selection-start="247" selection-end="247" vertical-scroll-proportion="-7.5">
               <folding />
             </state>
           </provider>
@@ -175,10 +167,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Application.scala" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Application.scala" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/Application.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="199" selection-start="651" selection-end="651" vertical-scroll-proportion="0.0">
+            <state line="40" column="55" selection-start="1005" selection-end="1005" vertical-scroll-proportion="0.2747253">
               <folding>
                 <element signature="e#21#38#0" expanded="true" />
               </folding>
@@ -254,8 +246,8 @@
         <option value="$PROJECT_DIR$/app/views/main.scala.html" />
         <option value="$PROJECT_DIR$/app/model/User.scala" />
         <option value="$PROJECT_DIR$/app/views/cadastro.scala.html" />
-        <option value="$PROJECT_DIR$/app/controllers/Application.scala" />
         <option value="$PROJECT_DIR$/app/views/login.scala.html" />
+        <option value="$PROJECT_DIR$/app/controllers/Application.scala" />
       </list>
     </option>
   </component>
@@ -892,13 +884,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/main.scala.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="179" selection-start="615" selection-end="615" vertical-scroll-proportion="-8.75">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/cadastro.scala.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="31" column="17" selection-start="1174" selection-end="1174" vertical-scroll-proportion="-19.375">
@@ -906,19 +891,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/Application.scala">
+    <entry file="file://$PROJECT_DIR$/app/views/main.scala.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="199" selection-start="651" selection-end="651" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#21#38#0" expanded="true" />
-          </folding>
+        <state line="14" column="179" selection-start="615" selection-end="615" vertical-scroll-proportion="-8.75">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/login.scala.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="12" selection-start="915" selection-end="915" vertical-scroll-proportion="0.49097064">
+        <state line="12" column="8" selection-start="247" selection-end="247" vertical-scroll-proportion="-7.5">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/Application.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="55" selection-start="1005" selection-end="1005" vertical-scroll-proportion="0.2747253">
+          <folding>
+            <element signature="e#21#38#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
