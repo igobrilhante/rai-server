@@ -34,7 +34,7 @@ object Application extends Controller {
         formWithErrors => BadRequest(html.login(formWithErrors)),
         login => {
               val token = User.getToken(login);
-              Redirect("/login#access_token="+token)
+              Redirect("/login#user="+login.username+"#token="+token);
         }
       )
   }

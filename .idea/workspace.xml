@@ -3,23 +3,28 @@
   <component name="ChangeListManager">
     <list default="true" id="98dab8bc-3212-4631-8409-669ce0837f8d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/Application.scala" afterPath="$PROJECT_DIR$/app/controllers/Application.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/Recommendation.scala" afterPath="$PROJECT_DIR$/app/model/Recommendation.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/RecommendationController.scala" afterPath="$PROJECT_DIR$/app/controllers/RecommendationController.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/User.scala" afterPath="$PROJECT_DIR$/app/model/User.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/routes" afterPath="$PROJECT_DIR$/conf/routes" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="rai-server.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374552628183" ignored="false" />
+    <file path="/Dummy.txt" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374639216867" ignored="false" />
     <file path="/Usuario.scala" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1371905379227" ignored="false" />
     <file path="/Recomendacao.scala" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1371905244530" ignored="false" />
     <file path="/Poi.scala" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1371912684874" ignored="false" />
     <file path="/RecomendacaoController.scala" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1371906133302" ignored="false" />
     <file path="/PoiController.scala" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1371912214231" ignored="false" />
     <file path="/UsuarioController.scala" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1371742285507" ignored="false" />
-    <file path="/routes" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374554711753" ignored="false" />
+    <file path="/routes" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374640933304" ignored="false" />
     <file path="/application.conf" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1372734379838" ignored="false" />
     <file path="/a.dummy" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1371912286615" ignored="false" />
     <file path="/Venue.scala" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1372740118106" ignored="false" />
-    <file path="/RecommendationController.scala" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1371912708755" ignored="false" />
+    <file path="/RecommendationController.scala" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374641343415" ignored="false" />
     <file path="/cadastro.scala.html" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374565176563" ignored="false" />
-    <file path="/Recommendation.scala" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1372727384310" ignored="false" />
+    <file path="/Recommendation.scala" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374641262321" ignored="false" />
     <file path="/VenueController.scala" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1372739079659" ignored="false" />
     <file path="$PROJECT_DIR$/../rai/src/com/rai/services/VenueService.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1372742057987" ignored="false" />
     <file path="/VenueService.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1372742057123" ignored="false" />
@@ -28,8 +33,8 @@
     <file path="$PROJECT_DIR$/../rai/src/com/rai/services/GeoCoderService.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1372728944691" ignored="false" />
     <file path="$PROJECT_DIR$/../rai/src/com/rai/services/WeatherService.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374550077196" ignored="false" />
     <file path="$PROJECT_DIR$/../rai/src/com/rai/services/TwitterService.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1372729495084" ignored="false" />
-    <file path="$PROJECT_DIR$/../rai/src/com/rai/MapActivity.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374568658212" ignored="false" />
-    <file path="/MapActivity.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374568656545" ignored="false" />
+    <file path="$PROJECT_DIR$/../rai/src/com/rai/MapActivity.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374588589229" ignored="false" />
+    <file path="/MapActivity.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374588588845" ignored="false" />
     <file path="/WeatherService.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374550070405" ignored="false" />
     <file path="$PROJECT_DIR$/../rai/src/com/rai/context/ContextManager.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374567822728" ignored="false" />
     <file path="/ContextManager.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374567820752" ignored="false" />
@@ -43,23 +48,37 @@
     <file path="$PROJECT_DIR$/../rai/res/values-sw600dp/colors.xml" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374547825383" ignored="false" />
     <file path="$PROJECT_DIR$/../rai/res/values/colors.xml" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374551645064" ignored="false" />
     <file path="/colors.xml" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374547862012" ignored="false" />
-    <file path="$PROJECT_DIR$/../rai/src/com/rai/MainActivity.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374553301222" ignored="false" />
-    <file path="/MainActivity.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374553294018" ignored="false" />
-    <file path="$PROJECT_DIR$/../rai/AndroidManifest.xml" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374552961487" ignored="false" />
-    <file path="$PROJECT_DIR$/../rai/src/com/rai/WebActivity.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374568024194" ignored="false" />
+    <file path="$PROJECT_DIR$/../rai/src/com/rai/MainActivity.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374588755866" ignored="false" />
+    <file path="/MainActivity.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374588754043" ignored="false" />
+    <file path="$PROJECT_DIR$/../rai/AndroidManifest.xml" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374583536074" ignored="false" />
+    <file path="$PROJECT_DIR$/../rai/src/com/rai/WebActivity.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374639348227" ignored="false" />
     <file path="$PROJECT_DIR$/../rai/gen/com/rai/BuildConfig.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374552976856" ignored="false" />
     <file path="$PROJECT_DIR$/../rai/gen/com/rai/Manifest.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374552964229" ignored="false" />
     <file path="$PROJECT_DIR$/../rai/gen/com/rai/R.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374552964229" ignored="false" />
     <file path="$PROJECT_DIR$/../rai/res/layout/activity_web.xml" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374552680241" ignored="false" />
-    <file path="/WebActivity.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374567991152" ignored="false" />
+    <file path="/WebActivity.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374639346441" ignored="false" />
     <file path="/fragment.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374552909871" ignored="false" />
-    <file path="/Application.scala" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374567168845" ignored="false" />
+    <file path="/Application.scala" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374639275781" ignored="false" />
     <file path="/User.scala" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374565214694" ignored="false" />
     <file path="/UserController.scala" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374554298356" ignored="false" />
     <file path="/Build.scala" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374559737943" ignored="false" />
     <file path="/login.scala.html" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374566479817" ignored="false" />
     <file path="/main.scala.html" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374560616496" ignored="false" />
     <file path="$PROJECT_DIR$/target/scala-2.10/src_managed/main/views/html/login.template.scala" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374566686197" ignored="false" />
+    <file path="$PROJECT_DIR$/../rai/src/com/rai/RecommendationActivity.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374640709500" ignored="false" />
+    <file path="$PROJECT_DIR$/../rai/res/layout/activity_recommendation.xml" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374594380160" ignored="false" />
+    <file path="$PROJECT_DIR$/../rai/res/layout/list_recommendation.xml" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374592261255" ignored="false" />
+    <file path="/list_recommendation.xml" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374589345152" ignored="false" />
+    <file path="/activity_recommendation.xml" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374594030801" ignored="false" />
+    <file path="/RecommendationActivity.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374640617583" ignored="false" />
+    <file path="$PROJECT_DIR$/../rai/src/com/rai/entity/Recommendation.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374586864779" ignored="false" />
+    <file path="/Recommendation.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374586842652" ignored="false" />
+    <file path="$PROJECT_DIR$/../rai/src/com/rai/entity/Venue.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374594559005" ignored="false" />
+    <file path="/Venue.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374594549525" ignored="false" />
+    <file path="$PROJECT_DIR$/../rai/src/com/rai/services/RecommendationService.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374588395892" ignored="false" />
+    <file path="/RecommendationService.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374587868401" ignored="false" />
+    <file path="$PROJECT_DIR$/../rai/src/com/rai/adapter/RecommendationAdapter.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374588064433" ignored="false" />
+    <file path="/RecommendationAdapter.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374588064433" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +96,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <breakpoint_rules default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -112,7 +132,6 @@
       </breakpoint>
     </breakpoint_any>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <breakpoint_rules default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -125,7 +144,7 @@
       <file leaf-file-name="cadastro.scala.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/cadastro.scala.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="17" selection-start="1174" selection-end="1174" vertical-scroll-proportion="-19.375">
+            <state line="31" column="17" selection-start="1174" selection-end="1174" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -134,25 +153,45 @@
       <file leaf-file-name="main.scala.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/main.scala.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="179" selection-start="615" selection-end="615" vertical-scroll-proportion="-8.75">
+            <state line="14" column="179" selection-start="615" selection-end="615" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.scala.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="login.scala.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/login.scala.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="8" selection-start="247" selection-end="247" vertical-scroll-proportion="0.20316027">
+            <state line="15" column="59" selection-start="281" selection-end="281" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Build.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project/Build.scala">
+      <file leaf-file-name="Venue.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/model/Venue.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="194" selection-start="440" selection-end="440" vertical-scroll-proportion="0.0">
+            <state line="54" column="7" selection-start="1329" selection-end="1329" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#15#45#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Application.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/Application.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="48" column="108" selection-start="1280" selection-end="1280" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RecommendationController.scala" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/RecommendationController.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="56" column="152" selection-start="1254" selection-end="1254" vertical-scroll-proportion="0.41587302">
               <folding />
             </state>
           </provider>
@@ -161,28 +200,19 @@
       <file leaf-file-name="routes" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/conf/routes">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="14" selection-start="190" selection-end="195" vertical-scroll-proportion="0.0">
+            <state line="14" column="23" selection-start="704" selection-end="704" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Application.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/Application.scala">
+      <file leaf-file-name="Recommendation.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/model/Recommendation.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="52" selection-start="899" selection-end="899" vertical-scroll-proportion="0.0">
+            <state line="46" column="57" selection-start="1076" selection-end="1076" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="e#21#38#0" expanded="true" />
+                <element signature="e#15#29#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/model/User.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="86" column="147" selection-start="2474" selection-end="2474" vertical-scroll-proportion="0.0">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -196,19 +226,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Autenticacao.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/Autenticacao.scala">
+      <file leaf-file-name="User.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/model/User.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="7" selection-start="365" selection-end="365" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserController.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/UserController.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="5" selection-start="580" selection-end="580" vertical-scroll-proportion="0.0">
+            <state line="33" column="7" selection-start="663" selection-end="663" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -235,27 +256,26 @@
         <option value="$PROJECT_DIR$/app/model/Tip.scala" />
         <option value="$PROJECT_DIR$/app/controllers/PoiController.scala" />
         <option value="$PROJECT_DIR$/app/model/Usuario.scala" />
-        <option value="$PROJECT_DIR$/app/controllers/RecommendationController.scala" />
-        <option value="$PROJECT_DIR$/app/model/Recommendation.scala" />
         <option value="$PROJECT_DIR$/conf/application.conf" />
         <option value="$PROJECT_DIR$/app/controllers/VenueController.scala" />
         <option value="$PROJECT_DIR$/app/model/Venue.scala" />
-        <option value="$PROJECT_DIR$/conf/routes" />
         <option value="$PROJECT_DIR$/app/controllers/UserController.scala" />
         <option value="$PROJECT_DIR$/project/Build.scala" />
         <option value="$PROJECT_DIR$/app/views/main.scala.html" />
-        <option value="$PROJECT_DIR$/app/model/User.scala" />
         <option value="$PROJECT_DIR$/app/views/cadastro.scala.html" />
         <option value="$PROJECT_DIR$/app/views/login.scala.html" />
         <option value="$PROJECT_DIR$/app/controllers/Application.scala" />
+        <option value="$PROJECT_DIR$/conf/routes" />
+        <option value="$PROJECT_DIR$/app/model/User.scala" />
+        <option value="$PROJECT_DIR$/app/model/Recommendation.scala" />
+        <option value="$PROJECT_DIR$/app/controllers/RecommendationController.scala" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-2" />
     <option name="y" value="22" />
     <option name="width" value="1858" />
-    <option name="height" value="1058" />
+    <option name="height" value="778" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -285,7 +305,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -426,12 +445,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="project" />
+              <option name="myItemId" value="conf" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Build.scala" />
-              <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -464,6 +479,10 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="model" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Venue.scala" />
+              <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -502,12 +521,35 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Recommendation.scala" />
+              <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rai-server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rai-server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -527,8 +569,8 @@
     <property name="restartRequiresConfirmation" value="true" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -540,6 +582,14 @@
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
       <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
       <method />
     </configuration>
     <configuration default="true" type="Specs2RunConfiguration" factoryName="Specs2">
@@ -557,12 +607,17 @@
       <setting name="showProgressMessages" value="true" />
       <method />
     </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -593,30 +648,6 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Play2FrameworkRunConfigurations" factoryName="Play 2 App">
-      <module name="" />
-      <setting name="play2JpdaPort" value="9999" />
-      <setting name="play2JvmOptions" value="-Xms512M -Xmx1024M -Xss1M -XX:+CMSClassUnloadingEnabled -XX:MaxPermSize=256M" />
-      <setting name="play2NeedOpenInBrowser" value="true" />
-      <setting name="play2OpenUrl" value="http://localhost:9000" />
-      <setting name="play2EnvVariables" value="" />
-      <setting name="play2IsNonDefaultInstallDirUsed" value="false" />
-      <setting name="play2NonDefaultInstallDir" value="" />
-      <method />
-    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" />
@@ -632,11 +663,15 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
-      <JSDebuggerConfigurationSettings>
-        <option name="engineId" />
-        <option name="fileUrl" />
-      </JSDebuggerConfigurationSettings>
+    <configuration default="true" type="Play2FrameworkRunConfigurations" factoryName="Play 2 App">
+      <module name="" />
+      <setting name="play2JpdaPort" value="9999" />
+      <setting name="play2JvmOptions" value="-Xms512M -Xmx1024M -Xss1M -XX:+CMSClassUnloadingEnabled -XX:MaxPermSize=256M" />
+      <setting name="play2NeedOpenInBrowser" value="true" />
+      <setting name="play2OpenUrl" value="http://localhost:9000" />
+      <setting name="play2EnvVariables" value="" />
+      <setting name="play2IsNonDefaultInstallDirUsed" value="false" />
+      <setting name="play2NonDefaultInstallDir" value="" />
       <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -658,6 +693,13 @@
       </option>
       <envs />
       <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
       <method />
     </configuration>
     <configuration default="false" name="Rai-Server" type="Play2FrameworkRunConfigurations" factoryName="Play 2 App" singleton="true">
@@ -709,13 +751,12 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2" y="22" width="1858" height="1058" extended-state="0" />
+    <frame x="0" y="22" width="1858" height="778" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32942432" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -734,6 +775,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32942432" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -798,48 +840,14 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/target/scala-2.10/src_managed/main/controllers/routes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="54" selection-start="370" selection-end="370" vertical-scroll-proportion="0.14975041">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf/smartcity">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="2" selection-end="35" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/Venue.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="21" selection-start="3019" selection-end="3061" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#15#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/target/scala-2.10/src_managed/main/views/html/cadastro.template.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="87" selection-start="1212" selection-end="1320" vertical-scroll-proportion="0.68877554">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf/routes">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="14" selection-start="190" selection-end="195" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="37" column="87" selection-start="1212" selection-end="1320" vertical-scroll-proportion="0.68877554" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/project/Build.scala">
@@ -851,16 +859,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/target/scala-2.10/src_managed/main/routes_reverseRouting.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="102" column="4" selection-start="2083" selection-end="2083" vertical-scroll-proportion="0.33333334">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/VenueController.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="13" selection-start="779" selection-end="929" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="102" column="4" selection-start="2083" selection-end="2083" vertical-scroll-proportion="0.33333334" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/Autenticacao.scala">
@@ -877,39 +876,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/User.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="147" selection-start="2474" selection-end="2474" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/Application.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="52" selection-start="899" selection-end="899" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#21#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/cadastro.scala.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="17" selection-start="1174" selection-end="1174" vertical-scroll-proportion="-19.375">
+        <state line="31" column="17" selection-start="1174" selection-end="1174" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/main.scala.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="179" selection-start="615" selection-end="615" vertical-scroll-proportion="-8.75">
+        <state line="14" column="179" selection-start="615" selection-end="615" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/login.scala.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="8" selection-start="247" selection-end="247" vertical-scroll-proportion="0.20316027">
+        <state line="15" column="59" selection-start="281" selection-end="281" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/Application.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="108" selection-start="1280" selection-end="1280" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/VenueController.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="13" selection-start="779" selection-end="929" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/routes">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="23" selection-start="704" selection-end="704" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/User.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="7" selection-start="663" selection-end="663" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/Venue.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="7" selection-start="1329" selection-end="1329" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#15#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/Recommendation.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="57" selection-start="1076" selection-end="1076" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#15#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/RecommendationController.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="152" selection-start="1254" selection-end="1254" vertical-scroll-proportion="0.41587302">
           <folding />
         </state>
       </provider>

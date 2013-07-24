@@ -50,21 +50,23 @@ object RecommendationController extends Controller {
 
 
 
-  def avaliar(id : Long,usuarioId:Long, avaliacao : Double) =  Action{
+  def evaluate(venueId : String,usuarioId:Long, rating : Double) =  Action{
 
     request =>
     {
-      val res = Recommendation.avaliarRecomendacao(id,usuarioId,avaliacao)
-      if(res != null){
-        Ok(Json.obj(
-          "resultado" -> Json.obj(),
-          "meta"      -> Json.obj("code"->202)
-        ))
+      val res = Recommendation.evaluate(venueId,usuarioId,rating)
+      if(res > 0){
+          Ok(Json.obj(
+            "result" -> Json.obj(),
+            "meta"   -> Json.obj("code"->202)
+          ))
       }
-      BadRequest(Json.obj(
-        "resultado" -> Json.obj(),
-        "meta" -> Json.obj("code"->401,"erro"->"Problema nao identificado")
-      ))
+      else{
+          BadRequest(Json.obj(
+            "result" -> Json.obj(),
+            "meta"   -> Json.obj("code"->401,"erro"->"Problema nao identificado")
+          ))
+      }
 
     }
 

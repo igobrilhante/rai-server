@@ -1,7 +1,9 @@
 package model
 
-import anorm.Pk
+import anorm._
 import play.api.libs.json.{Json, JsValue, Writes}
+import play.api.db.DB
+import play.api.Play.current
 
 
 /**
@@ -40,8 +42,13 @@ object Recommendation {
       return null;
   }
 
-  def avaliarRecomendacao(id : Long,usuarioId:Long, nota: Double) = {
-
+  def evaluate(venueId : String,userId:Long, rating: Double) : Int = DB.withConnection {
+    implicit conn =>
+    val res = SQL("insert into fortaleza.recommendation(venue_id,user_id,rating) values({venue_id},{user_id},{rating})")
+      .on("venue_id" -> venueId,
+           "user_id"  -> userId,
+           "rating"   -> rating).executeUpdate();
+    return res
   }
 
   def get(hourOfDay : Int, weather : String, lat : Double, lng : Double ) : List[Recommendation] = {

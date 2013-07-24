@@ -52,7 +52,6 @@ object User {
       "password"  -> usuario.password,
       "token"     -> generateToken()
       ).executeUpdate();
-      print("opaaa")
   }
 
   def generateToken(): String = {
