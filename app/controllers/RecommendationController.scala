@@ -50,11 +50,11 @@ object RecommendationController extends Controller {
 
 
 
-  def evaluate(venueId : String,usuarioId:Long, rating : Double, time : Long) =  Action{
+  def evaluate(venueId : String,username:String, rating : Double, time : Long) =  Action{
 
     request =>
     {
-      val res = Recommendation.evaluate(venueId,usuarioId,rating,time)
+      val res = Recommendation.evaluate(venueId,username,rating,time)
       if(res > 0){
           Ok(Json.obj(
             "result" -> Json.obj(),

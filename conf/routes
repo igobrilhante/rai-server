@@ -15,7 +15,7 @@ GET     /usuario/:id/recomendacao               controllers.UserController.recom
 
 # Recommendation
 GET     /rec/:id                                controllers.RecommendationController.get(id: Long)
-GET     /rec/:venue/:user/:rating/:time               controllers.RecommendationController.evaluate(venue: String,user:Long, rating: Double, time : Long)
+GET     /rec/:venue/:user/:rating/:time               controllers.RecommendationController.evaluate(venue: String,user:String, rating: Double, time : Long)
 POST    /rec/contexto                           controllers.RecommendationController.contexto(hourOfDay : Int, weather : String, lat : Double, lng : Double)
 GET     /rec/test/:nome                         controllers.RecommendationController.test(nome : String)
 
