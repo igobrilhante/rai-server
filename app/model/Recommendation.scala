@@ -42,12 +42,13 @@ object Recommendation {
       return null;
   }
 
-  def evaluate(venueId : String,userId:Long, rating: Double) : Int = DB.withConnection {
+  def evaluate(venueId : String,userId:Long, rating: Double, time: Long) : Int = DB.withConnection {
     implicit conn =>
-    val res = SQL("insert into fortaleza.recommendation(venue_id,user_id,rating) values({venue_id},{user_id},{rating})")
-      .on("venue_id" -> venueId,
+    val res = SQL("insert into fortaleza.recommendation(venue_id,user_id,rating,time) values({venue_id},{user_id},{rating},{time})")
+      .on("venue_id"  -> venueId,
            "user_id"  -> userId,
-           "rating"   -> rating).executeUpdate();
+           "rating"   -> rating,
+           "time"     -> time).executeUpdate();
     return res
   }
 
