@@ -23,6 +23,8 @@ case class Venue(
                 latitude:Double,
                 longitude:Double,
                 rating:Double,
+                address:String,
+                distance:Double,
                 categories: Set[String]
                 )
 
@@ -62,6 +64,8 @@ object Venue {
         "latitude"    -> poi.latitude,
         "longitude"   -> poi.longitude,
         "avaliacao"   -> poi.rating,
+        "address"     -> poi.address,
+        "distance"    -> poi.distance,
         "categories" -> Json.toJson(poi.categories)
       )
     }
@@ -72,22 +76,24 @@ object Venue {
     getAliased[String]("name") ~
     getAliased[Double]("latitude")~
     getAliased[Double]("longitude")~
+    getAliased[String]("address")~
+    getAliased[Double]("distance")~
     getAliased[Double]("rating") map {
-    case id~name~latitude~longitude~rating => Venue(id,name,latitude,longitude,rating,Set())
+    case id~name~latitude~longitude~address~distance~rating => Venue(id,name,latitude,longitude,rating,address,distance,Set())
     }
   }
 
   def get(latitude : Double, longitude : Double) : List[Venue]  = DB.withConnection {
     implicit conn =>
       SQL(
-        "select * from fortaleza.venue where st_dwithin(st_geomfromtext('POINT('||{longitude}||' '||{latitude}||')',4326),geom,{distance}) limit 3;"
+        "select *,st_distance(st_geomfromtext('POINT('||{longitude}||' '||{latitude}||')',4326),geom) as distance from fortaleza.venue where st_dwithin(st_geomfromtext('POINT('||{longitude}||' '||{latitude}||')',4326),geom,{distance}) limit 10;"
       ).on("latitude" -> latitude,"longitude" -> longitude,"distance" -> 0.008).as{venueSQL *}
   }
 
   def get(id: String) : Venue = DB.withConnection {
       implicit conn =>
             SQL(
-            "select * from fortaleza.venue limit 1;"
+            "select *,0.0 as distance from fortaleza.venue limit 1;"
             ).on("id" -> id).as{venueSQL.single}
   }
 
