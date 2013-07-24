@@ -100,7 +100,7 @@ object Venue {
   def getByTag(tag : String) : List[Venue] = DB.withConnection {
     implicit conn =>
       SQL(
-        " select distinct venue_id AS ID,name,latitude,longitude,rating,0.0 distance,address " +
+        " select distinct venue_id AS ID,name,latitude,longitude,rating,0.0::double precision distance,address " +
         " from fortaleza.venue_tip t,fortaleza.venue v    " +
         " where  venue_id = v.id  and tip_content similar to '%'||{tag}||'%'  " +
         " order by rating desc limit 10"
