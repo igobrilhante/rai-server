@@ -24,7 +24,7 @@ case class Venue(
                 longitude:Double,
                 rating:Double,
                 address:String,
-                distance:Double,
+                distance:Int,
                 categories: Set[String]
                 )
 
@@ -77,7 +77,7 @@ object Venue {
     getAliased[Double]("latitude")~
     getAliased[Double]("longitude")~
     getAliased[String]("address")~
-    getAliased[Double]("distance")~
+    getAliased[Int]("distance")~
     getAliased[Double]("rating") map {
     case id~name~latitude~longitude~address~distance~rating => Venue(id,name,latitude,longitude,rating,address,distance,Set())
     }
@@ -86,8 +86,10 @@ object Venue {
   def get(latitude : Double, longitude : Double) : List[Venue]  = DB.withConnection {
     implicit conn =>
       SQL(
-        "select *,st_distance(st_geomfromtext('POINT('||{longitude}||' '||{latitude}||')',4326),geom) as distance from fortaleza.venue where st_dwithin(st_geomfromtext('POINT('||{longitude}||' '||{latitude}||')',4326),geom,{distance}) limit 10;"
-      ).on("latitude" -> latitude,"longitude" -> longitude,"distance" -> 0.008).as{venueSQL *}
+        " select *," +
+        " st_distance(ST_Transform(st_geomfromtext('POINT('||{longitude}||' '||{latitude}||')',4326),2163),ST_Transform(geom,2163))::integer as distance from fortaleza.venue " +
+        " where st_dwithin(st_geomfromtext('POINT('||{longitude}||' '||{latitude}||')',4326),geom,{distance}) limit 10;"
+      ).on("latitude" -> latitude,"longitude" -> longitude,"distance" -> 0.01).as{venueSQL *}
   }
 
   def get(id: String) : Venue = DB.withConnection {
@@ -97,14 +99,20 @@ object Venue {
             ).on("id" -> id).as{venueSQL.single}
   }
 
-  def getByTag(tag : String) : List[Venue] = DB.withConnection {
+  def getByTag(tag : String,latitude : Double, longitude : Double, dow: Int) : List[Venue] = DB.withConnection {
     implicit conn =>
       SQL(
-        " select distinct venue_id AS ID,name,latitude,longitude,rating,0.0::double precision distance,address " +
-        " from fortaleza.venue_tip t,fortaleza.venue v    " +
-        " where  venue_id = v.id  and tip_content similar to '%'||{tag}||'%'  " +
-        " order by rating desc limit 10"
-      ).on("tag" -> tag).as{venueSQL *}
+        " select distinct p.venue_id AS ID,name,latitude,longitude,rating," +
+        " st_distance(ST_Transform(st_geomfromtext('POINT('||{longitude}||' '||{latitude}||')',4326),2163),ST_Transform(geom,2163))::integer distance,address,rec " +
+        " from fortaleza.venue_tip t,fortaleza.venue v, fortaleza.page_rank p    " +
+        " where t.venue_id = v.id  and " +
+        " (tip_content similar to '%'||{tag}||'%' or name similar to '%'||{tag}||'%')" +
+        " and p.venue_id = v.id" +
+        " and st_dwithin(st_geomfromtext('POINT('||{longitude}||' '||{latitude}||')',4326),geom,{distance})" +
+        " and dow = {dow}" +
+        " order by rec desc " +
+        " limit 10"
+      ).on("tag" -> tag,"latitude" -> latitude,"longitude" -> longitude,"distance" -> 0.01,"dow" -> dow).as{venueSQL *}
   }
 
 

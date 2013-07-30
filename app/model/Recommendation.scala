@@ -52,8 +52,24 @@ object Recommendation {
     return res
   }
 
-  def get(hourOfDay : Int, weather : String, lat : Double, lng : Double ) : List[Recommendation] = {
-    return null;
+  def get(dow : Int, lat : Double, lng : Double ) : List[Venue] = DB.withConnection {
+    implicit conn =>
+    val res =  SQL(
+        "   select *," +
+          " st_distance(ST_Transform(st_geomfromtext('POINT('||{longitude}||' '||{latitude}||')',4326),2163),ST_Transform(geom,2163))::integer as distance, rec " +
+          " from fortaleza.venue v, fortaleza.page_rank p " +
+          " where st_dwithin(st_geomfromtext('POINT('||{longitude}||' '||{latitude}||')',4326),geom,{distance}) " +
+          " and v.id = p.venue_id and dow={dow}" +
+          " order by rec desc" +
+          " limit 10;"
+      ).on(
+        "latitude" -> lat,
+        "longitude" -> lng,
+        "dow" -> dow,
+        "distance" -> 0.01)
+        .as{Venue.venueSQL *}
+
+      return res;
   }
 
 

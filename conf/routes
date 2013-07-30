@@ -14,10 +14,10 @@ GET     /usuario/:id                            controllers.UserController.get(i
 GET     /usuario/:id/recomendacao               controllers.UserController.recomendacao(id: Long)
 
 # Recommendation
-GET     /rec/:id                                controllers.RecommendationController.get(id: Long)
-GET     /rec/:venue/:user/:rating/:time               controllers.RecommendationController.evaluate(venue: String,user:String, rating: Double, time : Long)
-POST    /rec/contexto                           controllers.RecommendationController.contexto(hourOfDay : Int, weather : String, lat : Double, lng : Double)
-GET     /rec/test/:nome                         controllers.RecommendationController.test(nome : String)
+GET     /rec/:id                                                        controllers.RecommendationController.get(id: Long)
+GET     /rec/:venue/:user/:rating/:time                                 controllers.RecommendationController.evaluate(venue: String,user:String, rating: Double, time : Long)
+GET    /rec/contexto/:weather/:lat/:lng/:dow          controllers.RecommendationController.contexto(dow : Int, weather : String, lat : Double, lng : Double)
+GET     /rec/test/:nome                                                 controllers.RecommendationController.test(nome : String)
 
 # Venues
 GET     /poi/:id                                controllers.VenueController.get(id: String)
@@ -25,7 +25,7 @@ GET     /poi/:id/comentarios                    controllers.VenueController.come
 GET     /poi/buscar                             controllers.VenueController.buscar
 POST    /poi/buscar-por-categoria/:categories   controllers.VenueController.buscarPorCategorias(categories: String)
 GET     /poi/buscar/:latitude/:longitude        controllers.VenueController.getVenues(latitude: Double, longitude: Double)
-GET     /poi/buscar-por-tag/:tag                         controllers.VenueController.getVenuesByTag(tag:String)
+GET     /poi/buscar-por-tag/:tag/:latitude/:longitude/:dow                controllers.VenueController.getVenuesByTag(tag:String,latitude : Double, longitude : Double, dow: Int)
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)

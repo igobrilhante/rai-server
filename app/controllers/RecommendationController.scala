@@ -72,25 +72,22 @@ object RecommendationController extends Controller {
 
   }
 
-  def contexto(hourOfDay : Int, weather : String, lat : Double, lng : Double ) = Action{
-    implicit request =>
-    {
-      val recs:List[Recommendation] = Recommendation.get(hourOfDay,weather,lat,lng)
+  def contexto(dow : Int, weather : String, lat : Double, lng : Double ) = Action{
 
-      if (recs!=null){
+    val recs:List[Venue] = Recommendation.get(dow,lat,lng)
+
       Ok(Json.obj(
         "resultado" -> Json.obj(
             "count" ->  recs.size,
-            "recs"  ->  Json.arr(recs.map(rec => Json.toJson(rec)))
+            "venues"  ->  Json.toJson(recs)
         ),
         "meta" -> Json.obj("code"->202)
       ))
-      }
-      BadRequest(Json.obj(
-        "resultado" -> Json.obj(),
-        "meta"      -> Json.obj("code"->401,"erro"->"Problema nao identificado")
-      ))
-    }
+//      BadRequest(Json.obj(
+//        "resultado" -> Json.obj(),
+//        "meta"      -> Json.obj("code"->401,"erro"->"Problema nao identificado")
+//      ))
+
   }
 
 }
