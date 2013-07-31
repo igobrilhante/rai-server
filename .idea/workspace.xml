@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98dab8bc-3212-4631-8409-669ce0837f8d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/Recommendation.scala" afterPath="$PROJECT_DIR$/app/model/Recommendation.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/RecommendationController.scala" afterPath="$PROJECT_DIR$/app/controllers/RecommendationController.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/Venue.scala" afterPath="$PROJECT_DIR$/app/model/Venue.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/VenueController.scala" afterPath="$PROJECT_DIR$/app/controllers/VenueController.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/routes" afterPath="$PROJECT_DIR$/conf/routes" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="rai-server.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -22,7 +17,7 @@
     <file path="/application.conf" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1372734379838" ignored="false" />
     <file path="/a.dummy" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1371912286615" ignored="false" />
     <file path="/Venue.scala" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1375308208352" ignored="false" />
-    <file path="/RecommendationController.scala" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1375290045400" ignored="false" />
+    <file path="/RecommendationController.scala" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1375310458448" ignored="false" />
     <file path="/cadastro.scala.html" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374565176563" ignored="false" />
     <file path="/Recommendation.scala" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1375308917377" ignored="false" />
     <file path="/VenueController.scala" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1375308249189" ignored="false" />
@@ -31,13 +26,13 @@
     <file path="$PROJECT_DIR$/../rai/src/com/rai/services/AbstractService.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1372728934365" ignored="false" />
     <file path="/AbstractService.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1372728934365" ignored="false" />
     <file path="$PROJECT_DIR$/../rai/src/com/rai/services/GeoCoderService.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1372728944691" ignored="false" />
-    <file path="$PROJECT_DIR$/../rai/src/com/rai/services/WeatherService.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1375309364380" ignored="false" />
+    <file path="$PROJECT_DIR$/../rai/src/com/rai/services/WeatherService.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1375310325900" ignored="false" />
     <file path="$PROJECT_DIR$/../rai/src/com/rai/services/TwitterService.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1372729495084" ignored="false" />
-    <file path="$PROJECT_DIR$/../rai/src/com/rai/MapActivity.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1375309255749" ignored="false" />
-    <file path="/MapActivity.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1375309254162" ignored="false" />
-    <file path="/WeatherService.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1375309357253" ignored="false" />
-    <file path="$PROJECT_DIR$/../rai/src/com/rai/context/ContextManager.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374567822728" ignored="false" />
-    <file path="/ContextManager.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374567820752" ignored="false" />
+    <file path="$PROJECT_DIR$/../rai/src/com/rai/MapActivity.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1375310047787" ignored="false" />
+    <file path="/MapActivity.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1375310042707" ignored="false" />
+    <file path="/WeatherService.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1375310318325" ignored="false" />
+    <file path="$PROJECT_DIR$/../rai/src/com/rai/context/ContextManager.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1375310025158" ignored="false" />
+    <file path="/ContextManager.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1375310025158" ignored="false" />
     <file path="/LocationSensor.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374550941151" ignored="false" />
     <file path="$PROJECT_DIR$/../rai/src/com/rai/sensor/LocationSensor.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374550946808" ignored="false" />
     <file path="$PROJECT_DIR$/../rai/res/layout/activity_map.xml" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374551826256" ignored="false" />
@@ -65,12 +60,12 @@
     <file path="/login.scala.html" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374566479817" ignored="false" />
     <file path="/main.scala.html" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374560616496" ignored="false" />
     <file path="$PROJECT_DIR$/target/scala-2.10/src_managed/main/views/html/login.template.scala" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374566686197" ignored="false" />
-    <file path="$PROJECT_DIR$/../rai/src/com/rai/RecommendationActivity.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1375309090404" ignored="false" />
+    <file path="$PROJECT_DIR$/../rai/src/com/rai/RecommendationActivity.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1375310299205" ignored="false" />
     <file path="$PROJECT_DIR$/../rai/res/layout/activity_recommendation.xml" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374594380160" ignored="false" />
     <file path="$PROJECT_DIR$/../rai/res/layout/list_recommendation.xml" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374592261255" ignored="false" />
     <file path="/list_recommendation.xml" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374589345152" ignored="false" />
     <file path="/activity_recommendation.xml" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374594030801" ignored="false" />
-    <file path="/RecommendationActivity.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1375309061476" ignored="false" />
+    <file path="/RecommendationActivity.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1375310295925" ignored="false" />
     <file path="$PROJECT_DIR$/../rai/src/com/rai/entity/Recommendation.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374586864779" ignored="false" />
     <file path="/Recommendation.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374586842652" ignored="false" />
     <file path="$PROJECT_DIR$/../rai/src/com/rai/entity/Venue.java" changelist="98dab8bc-3212-4631-8409-669ce0837f8d" time="1374644961214" ignored="false" />
@@ -155,7 +150,7 @@
       <file leaf-file-name="RecommendationController.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/RecommendationController.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="42" selection-start="1733" selection-end="1733" vertical-scroll-proportion="0.0">
+            <state line="79" column="15" selection-start="1792" selection-end="1792" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -170,19 +165,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VenueController.scala" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="VenueController.scala" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/VenueController.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="72" selection-start="1440" selection-end="1440" vertical-scroll-proportion="0.0">
+            <state line="71" column="72" selection-start="1440" selection-end="1440" vertical-scroll-proportion="0.45604396">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Venue.scala" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Venue.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/model/Venue.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="111" column="8" selection-start="3810" selection-end="3810" vertical-scroll-proportion="0.5275974">
+            <state line="111" column="8" selection-start="3810" selection-end="3810" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -217,18 +212,18 @@
         <option value="$PROJECT_DIR$/app/views/login.scala.html" />
         <option value="$PROJECT_DIR$/app/controllers/Application.scala" />
         <option value="$PROJECT_DIR$/app/model/User.scala" />
-        <option value="$PROJECT_DIR$/app/controllers/RecommendationController.scala" />
         <option value="$PROJECT_DIR$/app/controllers/VenueController.scala" />
         <option value="$PROJECT_DIR$/app/model/Venue.scala" />
         <option value="$PROJECT_DIR$/conf/routes" />
         <option value="$PROJECT_DIR$/app/model/Recommendation.scala" />
+        <option value="$PROJECT_DIR$/app/controllers/RecommendationController.scala" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1168" />
-    <option name="width" value="754" />
-    <option name="height" value="800" />
+    <option name="y" value="22" />
+    <option name="width" value="1861" />
+    <option name="height" value="1058" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -700,7 +695,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1168" y="0" width="754" height="800" extended-state="6" />
+    <frame x="0" y="22" width="1861" height="1058" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -720,7 +715,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34322035" sideWeight="0.9962779" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1338843" sideWeight="0.96801704" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -856,23 +851,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/VenueController.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="72" selection-start="1440" selection-end="1440" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/conf/routes">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="97" selection-start="1080" selection-end="1080" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/RecommendationController.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="42" selection-start="1733" selection-end="1733" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -888,7 +869,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/model/Venue.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="111" column="8" selection-start="3810" selection-end="3810" vertical-scroll-proportion="0.5275974">
+        <state line="111" column="8" selection-start="3810" selection-end="3810" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/RecommendationController.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="79" column="15" selection-start="1792" selection-end="1792" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/VenueController.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="72" selection-start="1440" selection-end="1440" vertical-scroll-proportion="0.45604396">
           <folding />
         </state>
       </provider>

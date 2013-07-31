@@ -77,7 +77,7 @@ object RecommendationController extends Controller {
     val recs:List[Venue] = Recommendation.get(dow, rain, lat,lng)
 
       Ok(Json.obj(
-        "resultado" -> Json.obj(
+        "result" -> Json.obj(
             "count" ->  recs.size,
             "venues"  ->  Json.toJson(recs)
         ),
