@@ -52,24 +52,51 @@ object Recommendation {
     return res
   }
 
-  def get(dow : Int, lat : Double, lng : Double ) : List[Venue] = DB.withConnection {
+  def get(dow : Int, rain: Int, lat : Double, lng : Double ) : List[Venue] = DB.withConnection {
     implicit conn =>
+
+    if (rain == 0){
     val res =  SQL(
         "   select *," +
           " st_distance(ST_Transform(st_geomfromtext('POINT('||{longitude}||' '||{latitude}||')',4326),2163),ST_Transform(geom,2163))::integer as distance, rec " +
-          " from fortaleza.venue v, fortaleza.page_rank p " +
+          " from fortaleza.venue v, fortaleza.page_rank p, fortaleza.bayesian b" +
           " where st_dwithin(st_geomfromtext('POINT('||{longitude}||' '||{latitude}||')',4326),geom,{distance}) " +
-          " and v.id = p.venue_id and dow={dow}" +
-          " order by rec desc" +
+          " and v.id = p.venue_id and p.venue_id = b.venue_id " +
+          " and dow={dow}" +
+          " and when_no_rain >= {prob}" +
+          " order by rec desc,when_no_rain desc" +
           " limit 10;"
       ).on(
         "latitude" -> lat,
         "longitude" -> lng,
         "dow" -> dow,
-        "distance" -> 0.01)
+        "prob" -> 0.01,
+        "distance" -> 0.02)
         .as{Venue.venueSQL *}
 
       return res;
+    }
+    else{
+      val res =  SQL(
+        "   select *," +
+          " st_distance(ST_Transform(st_geomfromtext('POINT('||{longitude}||' '||{latitude}||')',4326),2163),ST_Transform(geom,2163))::integer as distance, rec " +
+          " from fortaleza.venue v, fortaleza.page_rank p, fortaleza.bayesian b" +
+          " where st_dwithin(st_geomfromtext('POINT('||{longitude}||' '||{latitude}||')',4326),geom,{distance}) " +
+          " and v.id = p.venue_id and p.venue_id = b.venue_id " +
+          " and dow={dow}" +
+          " and when_rain >= {prob}" +
+          " order by rec desc,when_rain desc" +
+          " limit 10;"
+      ).on(
+        "latitude" -> lat,
+        "longitude" -> lng,
+        "dow" -> dow,
+        "prob" -> 0.01,
+        "distance" -> 0.02)
+        .as{Venue.venueSQL *}
+
+      return res;
+    }
   }
 
 

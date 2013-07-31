@@ -72,8 +72,8 @@ object VenueController extends Controller {
     }
   }
 
-  def getVenuesByTag(tag : String,latitude : Double, longitude : Double, dow: Int) = Action{
-    val venues = Venue.getByTag(tag, latitude, longitude, dow);
+  def getVenuesByTag(tag : String,latitude : Double, longitude : Double, dow: Int, weather : Int) = Action{
+    val venues = Venue.getByTag(tag, latitude, longitude, dow,weather);
     if(venues!=null){
       Ok(
         Json.obj(

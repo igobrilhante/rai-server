@@ -72,9 +72,9 @@ object RecommendationController extends Controller {
 
   }
 
-  def contexto(dow : Int, weather : String, lat : Double, lng : Double ) = Action{
+  def contexto(dow : Int, rain : Int, lat : Double, lng : Double ) = Action{
 
-    val recs:List[Venue] = Recommendation.get(dow,lat,lng)
+    val recs:List[Venue] = Recommendation.get(dow, rain, lat,lng)
 
       Ok(Json.obj(
         "resultado" -> Json.obj(

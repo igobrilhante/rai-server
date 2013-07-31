@@ -99,20 +99,37 @@ object Venue {
             ).on("id" -> id).as{venueSQL.single}
   }
 
-  def getByTag(tag : String,latitude : Double, longitude : Double, dow: Int) : List[Venue] = DB.withConnection {
-    implicit conn =>
-      SQL(
-        " select distinct p.venue_id AS ID,name,latitude,longitude,rating," +
-        " st_distance(ST_Transform(st_geomfromtext('POINT('||{longitude}||' '||{latitude}||')',4326),2163),ST_Transform(geom,2163))::integer distance,address,rec " +
-        " from fortaleza.venue_tip t,fortaleza.venue v, fortaleza.page_rank p    " +
-        " where t.venue_id = v.id  and " +
-        " (tip_content similar to '%'||{tag}||'%' or name similar to '%'||{tag}||'%')" +
-        " and p.venue_id = v.id" +
-        " and st_dwithin(st_geomfromtext('POINT('||{longitude}||' '||{latitude}||')',4326),geom,{distance})" +
-        " and dow = {dow}" +
-        " order by rec desc " +
-        " limit 10"
-      ).on("tag" -> tag,"latitude" -> latitude,"longitude" -> longitude,"distance" -> 0.01,"dow" -> dow).as{venueSQL *}
+  def getByTag(tag : String,latitude : Double, longitude : Double, dow: Int,weather : Int) : List[Venue] = DB.withConnection {
+        if(weather == 0){
+              implicit conn =>
+                SQL(
+                  " select distinct p.venue_id AS ID,name,latitude,longitude,rating," +
+                  " st_distance(ST_Transform(st_geomfromtext('POINT('||{longitude}||' '||{latitude}||')',4326),2163),ST_Transform(geom,2163))::integer distance,address,rec " +
+                  " from fortaleza.venue_tip t,fortaleza.venue v, fortaleza.page_rank p, fortaleza.bayesian b    " +
+                  " where t.venue_id = v.id  and " +
+                  " (tip_content similar to '%'||{tag}||'%' or name similar to '%'||{tag}||'%')" +
+                  " and p.venue_id = v.id and b.venue_id = v.id" +
+                  " and dow = {dow}" +
+                  " and when_no_rain >= {prob}" +
+                  " order by rec desc " +
+                  " limit 10"
+                ).on("tag" -> tag,"latitude" -> latitude,"longitude" -> longitude,"dow" -> dow,"prob" -> 0.01).as{venueSQL *}
+        }
+        else{
+            implicit conn =>
+              SQL(
+                " select distinct p.venue_id AS ID,name,latitude,longitude,rating," +
+                  " st_distance(ST_Transform(st_geomfromtext('POINT('||{longitude}||' '||{latitude}||')',4326),2163),ST_Transform(geom,2163))::integer distance,address,rec " +
+                  " from fortaleza.venue_tip t,fortaleza.venue v, fortaleza.page_rank p, fortaleza.bayesian b    " +
+                  " where t.venue_id = v.id  and " +
+                  " (tip_content similar to '%'||{tag}||'%' or name similar to '%'||{tag}||'%')" +
+                  " and p.venue_id = v.id and b.venue_id = v.id" +
+                  " and dow = {dow}" +
+                  " and when_rain >= {prob}" +
+                  " order by rec desc " +
+                  " limit 10"
+              ).on("tag" -> tag,"latitude" -> latitude,"longitude" -> longitude,"dow" -> dow,"prob" -> 0.01).as{venueSQL *}
+        }
   }
 
 
